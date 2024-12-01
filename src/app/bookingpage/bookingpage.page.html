@@ -1,0 +1,71 @@
+
+<ion-content>
+
+  <div class="image-container">
+    <h1>happy stay</h1>
+  </div>
+
+  <div class="bookbed">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Book your bed!</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Name"
+            [(ngModel)]="name"
+            label-placement="floating"
+            required
+            placeholder="Enter your full name"
+            type="text"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+  
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Phone Number"
+            [(ngModel)]="phone"
+            label-placement="floating"
+            required
+            placeholder="Enter phone number"
+            type="number"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+  
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Aadhaar"
+            [(ngModel)]="aadhaar"
+            label-placement="floating"
+            required
+            placeholder="Enter your aadhaar card number"
+            type="number"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+  
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Stay Period"
+            [(ngModel)]="staytime"
+            label-placement="floating"
+            required
+            placeholder="Select stay period from 1 to 12 month(s)"
+            type="number"
+            min="1"
+            max="12"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+
+        <ion-button expand="full" fill="clear" class="transparent-button" (click)="bookbed()">Continue with Payment</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+  
+</ion-content>

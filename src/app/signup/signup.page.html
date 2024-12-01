@@ -1,0 +1,97 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="image-container">
+    <img src="assets/Logo.png" alt="Login Logo" class="login-logo">
+  </div>
+
+  <div class="signup-container"> 
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Sign Up!</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Name"
+            label-placement="floating"
+            required
+            placeholder="Enter your user id"
+            type="text"
+            class="transparent-input">
+          </ion-input>
+  
+        </ion-item>
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Email id"
+            label-placement="floating"
+            required
+            placeholder="Enter your user id"
+            type="email"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+  
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="User id"
+            label-placement="floating"
+            required
+            placeholder="Enter your user id"
+            type="text"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+  
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Password"
+            label-placement="floating"
+            required
+            placeholder="Enter your user id"
+            type="password"
+            [(ngModel)]="entered_password"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+
+        <ion-item class="transparent-input-item">
+          <ion-input
+            label="Re-enter password"
+            label-placement="floating"
+            required
+            placeholder="Enter your user id"
+            type="password"
+            [(ngModel)]="reentered_password"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+        <ion-button expand="full" fill="clear" class="transparent-button" (click)="checkpass()">Sign up</ion-button>
+        <p class="opt">------------  Sign-up with  ------------</p>
+
+        <div class="signup-options">
+
+          <ion-button class="logins">
+            <ion-icon name="logo-google"></ion-icon>
+          </ion-button>
+  
+          <ion-button class="logins">
+            <ion-icon name="logo-apple"></ion-icon>
+          </ion-button>
+  
+          <ion-button class="logins">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-button>
+
+        </div>
+
+        
+      </ion-card-content>
+  
+    </ion-card>
+  </div>
+
+</ion-content>

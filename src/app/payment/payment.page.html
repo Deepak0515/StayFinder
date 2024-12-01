@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="payment-container">
+    <ion-card class="payment">
+      <ion-card-header>
+        <ion-card-title>Payment Details</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <!-- Card Holder's Name -->
+        <ion-item lines="none">
+          <h1>Choose payment method</h1>
+        </ion-item>
+        <ion-radio-group [(ngModel)]="paymentMethod">
+          <ion-item lines="none">
+            <ion-label>Pay at hostel</ion-label>
+            <ion-radio slot="start" value="hostel"></ion-radio>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>UPI</ion-label>
+            <ion-radio slot="start" value="upi"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+        <ion-button expand="full" (click)="makepayment()">Make Payment</ion-button>
+
+        <!-- QR Code display for UPI payment -->
+        <div *ngIf="showQRCode" class="qr-code-container">
+          <img src="assets/QR.jpg" alt="UPI QR Code" />
+          <p>Scan this QR code to complete the payment.</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

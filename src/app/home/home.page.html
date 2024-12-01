@@ -1,0 +1,59 @@
+
+
+<ion-content>
+  <div class="image-container">
+    <img src="assets/Logo.png" alt="Login Logo" class="login-logo">
+  </div>
+  <div class="login-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Login</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        <ion-item class="transparent-input-item">
+          <ion-input
+            [(ngModel)]="entered_name"
+            label="User ID"
+            label-placement="floating"
+            required
+            placeholder="Enter your user id"
+            type="text"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+
+        <ion-item class="transparent-input-item">
+          <ion-input
+            [(ngModel)]="entered_email"
+            label="Email"
+            label-placement="floating"
+            required
+            placeholder="Enter your email"
+            type="email"
+            class="transparent-input">
+          </ion-input>
+        </ion-item>
+
+        <ion-item class="transparent-input-item">
+          <ion-input
+            [(ngModel)]="entered_password"
+            label="Password"
+            label-placement="floating"
+            required
+            placeholder="Enter your password"
+            type="password"
+            class="transparent-input">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+
+        <ion-button expand="full" (click)="login()" fill="clear" class="transparent-button">Login</ion-button>
+        <p class="acc">Not having an account?</p>
+        <ion-button expand="full" fill="clear" class="transparent-button" (click)="signup()">Sign up</ion-button>
+
+        
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

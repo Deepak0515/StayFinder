@@ -1,0 +1,76 @@
+ion-content{
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    max-height: 180px;
+    padding-left: 22%;
+  }
+  
+
+.signup-container{
+    display: flex;
+    max-height: fit-content;
+  }
+  
+  ion-card {
+    color: black;
+    width: 100%;
+    --background: linear-gradient(180deg, #6699ff 0%, #ccffff 100%, #ffffff 100%);
+    box-shadow: black;
+  }
+  
+  ion-button {
+    color: black; /* Button text color */
+    border: 2px solid rgb(93, 140, 235);
+    border-radius: 40px;
+    --background: transparent; /* Transparent button background */
+  }
+  
+  .transparent-input-item {
+    --background: transparent;
+    margin-bottom: 16px;
+  }
+  
+  .transparent-input {
+    --padding-start: 0;
+    --background: transparent;
+    color: black; /* Input text color */
+    border: none;
+    box-shadow: none;
+  }
+  
+  ion-item::part(native) {
+    background: transparent;
+    border: none;
+  }
+  
+  ion-label {
+    color: black !important; /* Label text color */
+  }
+  
+  ion-input::part(native) {
+    background: transparent !important;
+    color: black !important; /* Input text color */
+    caret-color: black; /* Cursor color */
+  }
+  
+  .transparent-button {
+    --color: black; /* Button text color */
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 8px;
+  }
+  .logins{
+    align-items: center;
+  }
+
+  .signup-options{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .opt{
+    text-align: center;
+  }

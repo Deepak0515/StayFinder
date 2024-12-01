@@ -1,0 +1,65 @@
+img{
+  max-width: 100%;
+  max-height: 180px;
+  padding-left: 22%;
+}
+
+.login-container {
+  display: flex;
+}
+
+ion-card {
+  color: black;
+  width: 100%;
+  --background: linear-gradient(180deg, #6699ff 0%, #ccffff 100%, #ffffff 100%);
+  box-shadow: black;
+}
+
+ion-button {
+  color: black;
+  border: 2px solid rgb(93, 140, 235);
+  border-radius: 40px;
+  --background: transparent; 
+}
+
+.transparent-input-item {
+  --background: transparent;
+  margin-bottom: 16px;
+}
+
+.transparent-input {
+  --padding-start: 0;
+  --background: transparent;
+  color: black; 
+  border: none;
+  box-shadow: none;
+}
+
+ion-item::part(native) {
+  background: transparent;
+  border: none;
+}
+
+ion-label {
+  color: black !important; 
+}
+
+ion-input::part(native) {
+  background: transparent !important;
+  color: black !important;   
+  caret-color: black; 
+   
+}
+
+.transparent-button {
+  --color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-top: 8px;
+}
+
+.acc {
+  text-align: center;
+  margin-top: 16px;
+  color: black;
+}
